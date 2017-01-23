@@ -1,0 +1,20 @@
+@@ set
+     domain   vraa.dev01.creuna.net
+     path     /ddv/
+     base_url http://${domain}${path}
+
+@@ parameterized
+    | browser  |
+    | firefox  |
+  #  | ie      |
+  #  | chrome  |
+
+@@ parameterized
+    | deviceName | tags      | size      |
+    | Desktop    | desktop   | 1920x1080 |
+#   | Tablet     | tablet    | 1024x768  |
+
+# Header on ${deviceName} device in ${browser} browser
+#    selenium ${browser} ${base_url} ${size}
+#        run login.js
+#        check header.spec --include "${tags}"
