@@ -1,20 +1,20 @@
 @@ set
-     domain   vraa.dev01.creuna.net
-     path     /ddv/
-     base_url http://${domain}${path}
+     domain   test.aurena.com
+     #path     
+     base_url http://${domain}/
 
 @@ parameterized
-    | browser  |
-    | firefox  |
-  #  | ie      |
-  #  | chrome  |
+    | browser |
+#    | firefox |
+#    | ie      |
+    | chrome  |
 
 @@ parameterized
     | deviceName | tags      | size      |
     | Desktop    | desktop   | 1920x1080 |
-#   | Tablet     | tablet    | 1024x768  |
+ #   | Tablet     | tablet    | 1024x768  |
+ #   | Mobile     | mobile    | 375x667   |
 
-# Header on ${deviceName} device in ${browser} browser
-#    selenium ${browser} ${base_url} ${size}
-#        run login.js
-#        check header.spec --include "${tags}"
+Logo on ${deviceName} device in ${browser} browser
+   selenium ${browser} ${base_url} ${size}
+       check "K:/Projects/GalenTests/Galen-Aurena/aurena-frontpage.spec" --include "${tags}"

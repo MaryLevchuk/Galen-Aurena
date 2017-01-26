@@ -1,0 +1,8 @@
+@objects
+    header  .site-header
+    logo    #Lager_1
+
+= Main section =
+
+    logo:
+	    centered all inside header

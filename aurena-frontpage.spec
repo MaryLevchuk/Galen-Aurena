@@ -1,10 +1,7 @@
-@@ import aurena-logo.spec
-@@ import aurena-timer.spec
-@@ import title.spec
-@@ import subtitle.spec
-@@ import video.spec
-@@ import text-after-video.spec
-@@ import registration-form.spec
-@@ import aurena-call-to-action-btn.spec
-@@ import footer-hash-aurena.spec
-@@ import social-icons.spec
+@objects
+  front-page    css    .front-page
+
+===== Main content =====
+    front-page:
+        component aurena-logo.gspec
+        component aurena-timer.gspec
