@@ -15,6 +15,6 @@
  #   | Tablet     | tablet    | 1024x768  |
  #   | Mobile     | mobile    | 375x667   |
 
-Logo on ${deviceName} device in ${browser} browser
+Timer on ${deviceName} device in ${browser} browser
    selenium ${browser} ${base_url} ${size}
        check "K:/Projects/GalenTests/Galen-Aurena/aurena-frontpage.spec" --include "${tags}"

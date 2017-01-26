@@ -1,13 +1,11 @@
 @objects
-    date-part-*       css    .page-intro__counter__item
-    date_number-text* css    .page-intro__counter__item__value
+    date_part-*        css    .page-intro__counter__item
 
 @script
-    date-text = ["Days", "Hours", "Minutes"];
+    dtext = ["Days", "Hours", "Minutes"];
     
-===== Days, Hours, Minutes =====
-
- @forEach [date-part-*] as time-counter, index as i
-        ${time-counter[i]}:
-        	contains ${date-number-text[i]}
-            text is "${date-text[i]}" 
+= DaysHoursMinutes =
+   
+    @forEach [date_part-*] as timeCounter, index as i
+        ${timeCounter}:
+        	text matches ".*${dtext[i-1]}" 
